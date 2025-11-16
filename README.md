@@ -146,21 +146,6 @@ DIC_Assignment (6).ipynb
 
 ---
 
-## 📁 Suggested Repository Structure
-
-```
-
-├── notebook/
-│   └── DIC_Assignment.ipynb
-├── screenshots/
-│   ├── bronze_preview.png
-│   ├── silver_core_preview.png
-│   ├── eda_monthly_counts.png
-│   └── vendor_distribution.png
-└── README.md
-
-```
-
 ---
 
 ## 🎯 Purpose of This Project
