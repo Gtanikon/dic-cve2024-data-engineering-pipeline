@@ -1,27 +1,27 @@
 
-# 🛡️ CVE 2024 Data Engineering Pipeline (Databricks + Delta Lake)
+#  CVE 2024 Data Engineering Pipeline (Databricks + Delta Lake)
 
 This repository contains a complete data engineering pipeline for ingesting, validating, transforming, and analyzing the **2024 CVE (Common Vulnerabilities and Exposures)** dataset using **Databricks**, **Apache Spark**, and **Delta Lake**.  
 The project follows the modern **Bronze → Silver → Analysis** lakehouse architecture and demonstrates end-to-end processing of large-scale cybersecurity data.
 
 ---
 
-## 📘 Project Overview
+##  Project Overview
 
 The goal of this project is to build a production-style ETL pipeline capable of processing **38,753 CVE records from 2024**, normalizing nested JSON structures, and generating meaningful security insights.  
 The pipeline is fully automated inside a Databricks notebook and includes:
 
-✔ Large-scale JSON ingestion  
-✔ Schema normalization and validation  
-✔ Delta Lake Bronze and Silver layers  
-✔ SQL-based exploratory analysis  
-✔ Vendor and severity intelligence  
+ Large-scale JSON ingestion  
+ Schema normalization and validation  
+ Delta Lake Bronze and Silver layers  
+ SQL-based exploratory analysis  
+ Vendor and severity intelligence  
 
 This project aligns with the requirements for the **Data Intensive Computing (DIC)** assignment.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 
@@ -39,13 +39,13 @@ Cybersecurity Insights
 
 ---
 
-## 🥇 Bronze Layer – Raw → Validated Delta Table
+##  Bronze Layer – Raw → Validated Delta Table
 
-### ✔ Data Source
+###  Data Source
 All CVE 2024 files are downloaded from the official  
 **CVEProject/cvelistV5** GitHub repository.
 
-### ✔ Processing Steps
+###  Processing Steps
 - Extract the CVE ZIP archive  
 - Traverse all **CVE-2024-*.json** files  
 - Normalize nested `containers` fields to JSON strings  
@@ -59,14 +59,14 @@ bronze_db.cve_bronze_2024
 
 ```
 
-### ✔ Assignment-required logical view
+###  Assignment-required logical view
 ```
 
 cve_bronze.records
 
 ```
 
-### ✔ Quality Checks
+###  Quality Checks
 - Row count ≈ **38,753**
 - CVE IDs are **non-null**
 - CVE IDs are **100% unique**
@@ -74,7 +74,7 @@ cve_bronze.records
 
 ---
 
-## 🥈 Silver Layer – Normalized Analytical Tables
+##  Silver Layer – Normalized Analytical Tables
 
 Two relational tables are created by parsing the Bronze JSON:
 
