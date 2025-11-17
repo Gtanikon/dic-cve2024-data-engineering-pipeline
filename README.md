@@ -73,6 +73,10 @@ cve_bronze.records
 - Table metadata and Delta history validated
 
 ---
+<img width="1122" height="542" alt="image" src="https://github.com/user-attachments/assets/e4c4f34e-310b-42d7-908e-1a5ddb2c00a3" />
+<img width="1141" height="437" alt="image" src="https://github.com/user-attachments/assets/339fad79-39fb-48dd-8032-5504428da9c2" />
+
+
 
 ##  Silver Layer – Normalized Analytical Tables
 
@@ -105,23 +109,42 @@ Exploded table capturing affected software:
 **Rows:** 179,498
 
 ---
+<img width="1108" height="381" alt="image" src="https://github.com/user-attachments/assets/6aeafd6d-4c71-4f0a-a838-91c9c9f0ed86" />
+<img width="1084" height="343" alt="image" src="https://github.com/user-attachments/assets/769f8459-008a-40d0-9fad-0fbf07023d41" />
+<img width="1104" height="413" alt="image" src="https://github.com/user-attachments/assets/6843b818-1252-4610-954f-16e3f8ef97a7" />
+<img width="1101" height="630" alt="image" src="https://github.com/user-attachments/assets/40de9e9d-3450-489c-9c8b-873a7a5fd1c7" />
+
+
+
+
 
 ## 📊 Exploratory Data Analysis (SQL)
 
 ### **1. Temporal Trends**
 - Monthly CVE publication counts  
 - Seasonality based on month names  
-- **Reserved → Published latency** using `DATEDIFF`  
+- **Reserved → Published latency** using `DATEDIFF`
+  <img width="1077" height="729" alt="image" src="https://github.com/user-attachments/assets/1ccf9e4e-6c9c-48a6-a85b-fc6d49af3656" />
+  <img width="1091" height="596" alt="image" src="https://github.com/user-attachments/assets/43c8d6f7-044e-4ba1-bf1b-072ddd3140f7" />
+  
+
 
 ### **2. Severity Distribution**
 - CVSS-based severity buckets  
 - Monthly severity trends  
-- Count of CVEs with unknown scores  
+- Count of CVEs with unknown scores
+  <img width="1103" height="731" alt="image" src="https://github.com/user-attachments/assets/eba5f163-398a-4bcf-b839-45fc5b3a86b1" />
+  <img width="1111" height="492" alt="image" src="https://github.com/user-attachments/assets/12ab8420-3c6e-491a-a8bb-6c477872fec9" />
+
+
 
 ### **3. Vendor Intelligence**
 - Top 25 vendors by vulnerability volume  
 - Top-10 concentration share (≈ 40.22%)  
 - Vendor × severity risk matrix  
+<img width="1122" height="659" alt="image" src="https://github.com/user-attachments/assets/d5ffb322-7fa4-4f6d-9813-ab671f108633" />
+<img width="1123" height="674" alt="image" src="https://github.com/user-attachments/assets/4763d68f-b855-477f-b3db-5e17e393516b" />
+
 
 ---
 
