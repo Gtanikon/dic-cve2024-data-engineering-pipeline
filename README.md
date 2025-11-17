@@ -125,7 +125,7 @@ Exploded table capturing affected software:
 
 ---
 
-## 🚀 How to Run the Pipeline
+##  How to Run the Pipeline
 
 ### **Prerequisites**
 - Databricks Workspace  
@@ -148,7 +148,7 @@ DIC_Assignment (6).ipynb
 
 ---
 
-## 🎯 Purpose of This Project
+##  Purpose of This Project
 
 This project demonstrates real-world data engineering skills including:
 
@@ -162,7 +162,7 @@ It serves as both an academic assignment and a strong portfolio project for **Da
 
 ---
 
-## 👤 Author
+##  Author
 
 **Gowtham Sai Krishna Tanikonda**  
 MS in Data Science, University at Buffalo  
